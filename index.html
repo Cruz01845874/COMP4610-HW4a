@@ -1,0 +1,67 @@
+<!--
+File: index.html
+GUI Assignment: HW3 Creating an Interactive Dynamic Table
+Copyright (c) 2022 by Roberto. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Roberto Cruz on 10/30/22
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Interactive Multiplication Table</title>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/ico/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="script/jquery-validation-1.19.5/lib/jquery-1.11.1.js"></script>
+    <script src="script/jquery-validation-1.19.5/lib/jquery.js"></script>
+    <script src="script/jquery-validation-1.19.5/dist/jquery.validate.js"></script>
+    <script src="script/jquery-validation-1.19.5/dist/additional-methods.js"></script>
+
+    <script type="text/javascript" src="script/script.js"></script>
+    <script src="script/form-validation.js"></script>
+
+</head>
+<body>
+    <h1>Interactive Multiplication Table</h1>
+    <!--Fieldset surrounds input form with border and places header on top.-->
+    <fieldset>
+        <legend>All numbers must be between -50 and 50 inclusive.</legend>
+        <form id="mult">
+            <label for="row_begin">
+                Starting Row Number
+            </label><br>
+            <input type="text" id="row_begin" name="row_begin" placeholder="0"><br>
+            <div id="r1_slider"></div><br>
+
+            <label for="row_end">
+                Ending Row Number
+            </label><br>
+            <input type="text" id="row_end" name="row_end" placeholder="0"><br>
+            <div id="r2_slider"></div><br>
+    
+            <label for="col_begin">
+                Starting Column Number
+            </label><br>
+            <input type="text" id="col_begin" name="col_begin" placeholder="0"><br>
+            <div id="c1_slider"></div><br>
+    
+            <label for="col_end">
+                Ending Column Number
+            </label><br>
+            <input type="text" id="col_end" name="col_end" placeholder="0"><br>
+            <div id="c2_slider"></div><br>
+
+            <!--Button does not create table directly. See JS file-->
+        <input type="button" id="submitButton" value="Create Table" onclick="createTable()">
+        </form>
+
+    </fieldset>
+    <div id="multTab">
+        <!--Creates table when button clicked-->
+    </div>
+    
+</body>
+</html>
