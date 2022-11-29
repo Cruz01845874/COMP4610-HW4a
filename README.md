@@ -1,1 +1,1 @@
-# COMP4610-HW4a
+# Using the jQuery Plugin
