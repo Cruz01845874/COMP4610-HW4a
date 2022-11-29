@@ -118,6 +118,7 @@ input[type=submit]:hover {
     border-radius: 4px;
 }
 
+/* Multiplication table headers stick when scrolled (for readability) */
 #multTab th, #tabs th, #fragment-ex th {
     background-color: #008bc2;
     position: sticky;
@@ -125,13 +126,7 @@ input[type=submit]:hover {
     left: 0;
 }
 
-#multTab th.x, #tabs th.x, #fragment-ex th.x {
-    background-color: #0036ac;
-    position: sticky;
-    top: 0;
-    left: 0;
-}
-
+/* Error messages are red and centered under the specific violating text field */
 .error {
     text-align: center;
     display: block;
@@ -142,34 +137,4 @@ input.error {
     border: 2px solid red;
 }
 
-#tabs {
-    background-color: rgb(58, 58, 58);
-    color:white;
-}
-
-#tablesMsg {
-    display: none;
-}
-
-#tabs li .ui-icon-close {
-    float: left; 
-    margin: 0.4em 0.2em 0 0; 
-    cursor: pointer;
-}
-
-.tabs-buttons {
-    display: inline-block;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-    color: white;
-    text-align: center;
-}
-
-#tableHeader h2 {
-    margin: auto 0 0 auto;
-    display: flex;
-}
-
 /* Perfect squares code in JS file */
-
-
