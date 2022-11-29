@@ -1,9 +1,9 @@
 <!--
 File: index.html
-GUI Assignment: HW3 Creating an Interactive Dynamic Table
+GUI Assignment: HW4a Using the jQuery Plugin
 Copyright (c) 2022 by Roberto. All rights reserved. May be freely copied or
 excerpted for educational purposes with credit to the author.
-updated by Roberto Cruz on 10/30/22
+updated by Roberto Cruz on 11/28/22
 -->
 
 <!DOCTYPE html>
@@ -15,12 +15,15 @@ updated by Roberto Cruz on 10/30/22
     <link rel="icon" type="image/x-icon" href="/ico/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--jQuery validation plugins-->
     <script src="script/jquery-validation-1.19.5/lib/jquery-1.11.1.js"></script>
     <script src="script/jquery-validation-1.19.5/lib/jquery.js"></script>
     <script src="script/jquery-validation-1.19.5/dist/jquery.validate.js"></script>
     <script src="script/jquery-validation-1.19.5/dist/additional-methods.js"></script>
 
     <script type="text/javascript" src="script/script.js"></script>
+
+    <!--Form validation for multiplication table-->
     <script src="script/form-validation.js"></script>
 
 </head>
@@ -33,26 +36,22 @@ updated by Roberto Cruz on 10/30/22
             <label for="row_begin">
                 Starting Row Number
             </label><br>
-            <input type="text" id="row_begin" name="row_begin" placeholder="0"><br>
-            <div id="r1_slider"></div><br>
+            <input type="text" id="row_begin" name="row_begin" value="0" placeholder="0"><br>
 
             <label for="row_end">
                 Ending Row Number
             </label><br>
-            <input type="text" id="row_end" name="row_end" placeholder="0"><br>
-            <div id="r2_slider"></div><br>
+            <input type="text" id="row_end" name="row_end" value="0" placeholder="0"><br>
     
             <label for="col_begin">
                 Starting Column Number
             </label><br>
-            <input type="text" id="col_begin" name="col_begin" placeholder="0"><br>
-            <div id="c1_slider"></div><br>
+            <input type="text" id="col_begin" name="col_begin" value="0" placeholder="0"><br>
     
             <label for="col_end">
                 Ending Column Number
             </label><br>
-            <input type="text" id="col_end" name="col_end" placeholder="0"><br>
-            <div id="c2_slider"></div><br>
+            <input type="text" id="col_end" name="col_end" value="0" placeholder="0"><br>
 
             <!--Button does not create table directly. See JS file-->
         <input type="button" id="submitButton" value="Create Table" onclick="createTable()">
